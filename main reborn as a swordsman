@@ -126,7 +126,7 @@ mainTab:AddDropdown({
     "TrainPower019", "TrainPower020", "TrainPower021", "TrainPower022", "TrainPower023", "TrainPower024",
     "TrainPower025", "TrainPower026", "TrainPower027", "TrainPower028", "TrainPower029", "TrainPower030",
     "TrainPower031", "TrainPower032", "TrainPower033", "TrainPower034", "TrainPower035", "TrainPower036",
-    "TrainPower037", "TrainPower038", "TrainPower039", "TrainPower040", "TrainPower041", "TrainPower042"
+    "TrainPower037", "TrainPower038", "TrainPower039", "TrainPower040", "TrainPower041", "TrainPower042", "TrainPower043", "TrainPower044", "TrainPower045", "TrainPower046", "TrainPower047", "TrainPower048",
   },
   Callback = function(value)
     getgenv().selectedTrain = value
@@ -186,4 +186,3 @@ mainTab:AddButton({
           print("button pressed")
     end    
 })
-
