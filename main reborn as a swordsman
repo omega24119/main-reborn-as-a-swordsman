@@ -1,0 +1,189 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "All universe hub", HidePremium = false, IntroEnabled = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local mainTab = Window:MakeTab({
+  Name = "farm",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+})
+
+local othersTab = Window:MakeTab({
+  Name = "extra",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+})
+
+--values
+getgenv().train = false
+getgenv().selectedTrain = "TrainPower001"
+getgenv().spin = false
+getgenv().rebirth = false
+getgenv().killaura = false
+
+--functions
+function doTrain()
+  while getgenv().train == true do
+    local args = {
+      [1] = getgenv().selectedTrain
+    }
+    game:GetService("ReplicatedStorage").Events.Game.Re_TrainPower:FireServer(unpack(args))
+    wait(0.1)
+  end
+end
+
+function dospin()
+  while getgenv().spin == true do
+    local args = {
+      [1] = "Spin+10"
+    }
+    game:GetService("ReplicatedStorage").Events.Market.Re_Product:FireServer(unpack(args))
+    wait(0.1)
+  end
+end
+
+function dorebirth()
+  while getgenv().rebirth == true do
+    game:GetService("ReplicatedStorage").Events.Stats.Re_Rebirth:FireServer()
+    wait(0.1)
+  end
+end
+
+function dokillaura()
+  while getgenv().killaura == true do
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+    local Events = ReplicatedStorage.Events.Fight
+
+    -- Function to damage NPCs
+    local function damageNPC(npcName)
+      local args = {
+        [1] = npcName,
+        [2] = 3 -- Assuming 3 is the damage value
+      }
+      Events.Re_TakeDamage:FireServer(unpack(args))
+    end
+
+    -- Function to toggle damage for multiple NPCs
+    local function toggleDamageForNPCs(npcNames)
+      for _, npcName in ipairs(npcNames) do
+        damageNPC(npcName)
+      end
+    end
+
+    -- List of NPCs to damage
+    local NPCsToDamage = {
+      "Npc001", "Npc002", "Npc003", "Npc004", "Npc005", "Npc006",
+      "Npc007", "Npc008", "Npc009", "Npc010", "Npc011", "Npc012",
+      "Npc013", "Npc014", "Npc015", "Npc016", "Npc017", "Npc018",
+      "Npc019", "Npc020", "Npc021", "Npc022", "Npc023", "Npc024",
+      "Npc025", "Npc026", "Npc027", "Npc028", "Npc029", "Npc030",
+      "Npc031", "Npc032", "Npc033", "Npc034", "Npc035", "Npc036",
+      "Npc037", "Npc038", "Npc039", "Npc040", "Npc041", "Npc042",
+      "Npc043", "Npc044", "Npc045", "Npc046", "Npc047"
+    }
+
+    -- Toggle to enable/disable damage for NPCs
+    local damageEnabled = false
+
+    -- Function to toggle damage aura
+    local function toggleDamageAura()
+      damageEnabled = not damageEnabled
+      if damageEnabled then
+        toggleDamageForNPCs(NPCsToDamage)
+        print("Damage aura enabled")
+      else
+        print("Damage aura disabled")
+      end
+    end
+
+    -- Example usage:
+    toggleDamageAura() -- Enable damage aura
+    -- Wait for 5 seconds (for example)
+    toggleDamageAura() -- Disable damage aura
+    wait(0.1)
+  end
+end
+
+--toggles
+mainTab:AddToggle({
+  Name = "kill aura!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().killaura = bool
+    if bool then
+      dokillaura()
+    end
+  end    
+})
+
+mainTab:AddDropdown({
+  Name = "Select Train",
+  Default = "TrainPower001",
+  Options = {
+    "TrainPower001", "TrainPower002", "TrainPower003", "TrainPower004", "TrainPower005", "TrainPower006",
+    "TrainPower007", "TrainPower008", "TrainPower009", "TrainPower010", "TrainPower011", "TrainPower012",
+    "TrainPower013", "TrainPower014", "TrainPower015", "TrainPower016", "TrainPower017", "TrainPower018",
+    "TrainPower019", "TrainPower020", "TrainPower021", "TrainPower022", "TrainPower023", "TrainPower024",
+    "TrainPower025", "TrainPower026", "TrainPower027", "TrainPower028", "TrainPower029", "TrainPower030",
+    "TrainPower031", "TrainPower032", "TrainPower033", "TrainPower034", "TrainPower035", "TrainPower036",
+    "TrainPower037", "TrainPower038", "TrainPower039", "TrainPower040", "TrainPower041", "TrainPower042"
+  },
+  Callback = function(value)
+    getgenv().selectedTrain = value
+  end    
+})
+
+mainTab:AddToggle({
+  Name = "Auto Train",
+  Default = false,
+  Callback = function(bool)
+    getgenv().train = bool
+    if bool then
+      doTrain()
+    end
+  end    
+})
+
+--others tab 
+othersTab:AddToggle({
+  Name = "auto spin!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().spin = bool
+    if bool then
+      dospin()
+    end
+  end    
+})
+
+othersTab:AddToggle({
+  Name = "auto rebirth!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().rebirth = bool
+    if bool then
+      dorebirth()
+    end
+  end    
+})
+
+--button
+mainTab:AddButton({
+  Name = "god mode!",
+  Callback = function()
+      local old
+      old = hookmetamethod(game, "__namecall", function(self, ...)
+          local args = {...}
+          local method = getnamecallmethod()
+
+          if tostring(self) == "Re_NpcDamage" and method == "FireServer" then 
+              warn("Remote has been freezed")
+              return nil 
+          end 
+
+          return old(self, ...)
+      end)
+          print("button pressed")
+    end    
+})
+
