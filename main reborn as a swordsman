@@ -584,11 +584,15 @@ function doegg24()
 
 
 
+local Section = eggTab:AddSection({
+  Name = "Castle eggs"
+})
+
 
 
 --egg toggles
 eggTab:AddToggle({
-  Name = "buy egg 1!",
+  Name = "5 wins!",
   Default = false,
   Callback = function(bool)
     getgenv().egg1 = bool
@@ -599,7 +603,7 @@ eggTab:AddToggle({
 })
 
 eggTab:AddToggle({
-  Name = "buy egg 2!",
+  Name = "25 wins!",
   Default = false,
   Callback = function(bool)
     getgenv().egg2 = bool
@@ -610,7 +614,7 @@ eggTab:AddToggle({
 })
 
 eggTab:AddToggle({
-  Name = "buy egg 3!",
+  Name = "150 wins!",
   Default = false,
   Callback = function(bool)
     getgenv().egg3 = bool
@@ -621,7 +625,7 @@ eggTab:AddToggle({
 })
 
 eggTab:AddToggle({
-  Name = "buy egg 4!",
+  Name = "450 wins!",
   Default = false,
   Callback = function(bool)
     getgenv().egg4 = bool
@@ -631,8 +635,14 @@ eggTab:AddToggle({
   end    
 })
 
+local Section = eggTab:AddSection({
+  Name = "mushroom eggs"
+})
+
+
+
 eggTab:AddToggle({
-  Name = "buy egg 5!",
+  Name = "4k wins!",
   Default = false,
   Callback = function(bool)
     getgenv().egg5 = bool
@@ -643,7 +653,7 @@ eggTab:AddToggle({
 })
 
 eggTab:AddToggle({
-  Name = "buy egg 6!",
+  Name = "10k wins!",
   Default = false,
   Callback = function(bool)
     getgenv().egg6 = bool
@@ -654,7 +664,7 @@ eggTab:AddToggle({
 })
 
 eggTab:AddToggle({
-  Name = "buy egg 7!",
+  Name = "30k wins!",
   Default = false,
   Callback = function(bool)
     getgenv().egg7 = bool
@@ -665,7 +675,7 @@ eggTab:AddToggle({
 })
 
 eggTab:AddToggle({
-  Name = "buy egg 8!",
+  Name = "150k wins!",
   Default = false,
   Callback = function(bool)
     getgenv().egg8 = bool
@@ -675,8 +685,14 @@ eggTab:AddToggle({
   end    
 })
 
+local Section = eggTab:AddSection({
+  Name = "desert eggs"
+})
+
+
+
 eggTab:AddToggle({
-  Name = "buy egg 9!",
+  Name = "1.6m wins!",
   Default = false,
   Callback = function(bool)
     getgenv().egg9 = bool
@@ -687,7 +703,7 @@ eggTab:AddToggle({
 })
 
 eggTab:AddToggle({
-  Name = "buy egg 10!",
+  Name = "3.5m wins!",
   Default = false,
   Callback = function(bool)
     getgenv().egg10 = bool
@@ -698,7 +714,7 @@ eggTab:AddToggle({
 })
 
 eggTab:AddToggle({
-  Name = "buy egg 11!",
+  Name = "8m wins!",
   Default = false,
   Callback = function(bool)
     getgenv().egg11 = bool
@@ -709,7 +725,7 @@ eggTab:AddToggle({
 })
 
 eggTab:AddToggle({
-  Name = "buy egg 12!",
+  Name = "40m wins!",
   Default = false,
   Callback = function(bool)
     getgenv().egg12 = bool
@@ -719,8 +735,14 @@ eggTab:AddToggle({
   end    
 })
 
+local Section = eggTab:AddSection({
+  Name = "snow eggs"
+})
+
+
+
 eggTab:AddToggle({
-  Name = "buy egg 13!",
+  Name = "450m wins",
   Default = false,
   Callback = function(bool)
     getgenv().egg13 = bool
@@ -731,7 +753,7 @@ eggTab:AddToggle({
 })
 
 eggTab:AddToggle({
-  Name = "buy egg 14!",
+  Name = "1B wins!",
   Default = false,
   Callback = function(bool)
     getgenv().egg14 = bool
@@ -742,7 +764,7 @@ eggTab:AddToggle({
 })
 
 eggTab:AddToggle({
-  Name = "buy egg 15!",
+  Name = "2B wins",
   Default = false,
   Callback = function(bool)
     getgenv().egg15 = bool
@@ -753,7 +775,7 @@ eggTab:AddToggle({
 })
 
 eggTab:AddToggle({
-  Name = "buy egg 16!",
+  Name = "10B wins!",
   Default = false,
   Callback = function(bool)
     getgenv().egg16 = bool
@@ -763,8 +785,14 @@ eggTab:AddToggle({
   end    
 })
 
+local Section = eggTab:AddSection({
+  Name = "underwater eggs"
+})
+
+
+
 eggTab:AddToggle({
-  Name = "buy egg 17!",
+  Name = "150B wins!",
   Default = false,
   Callback = function(bool)
     getgenv().egg17 = bool
@@ -775,7 +803,7 @@ eggTab:AddToggle({
 })
 
 eggTab:AddToggle({
-  Name = "buy egg 18!",
+  Name = "300B wins!",
   Default = false,
   Callback = function(bool)
     getgenv().egg18 = bool
@@ -786,7 +814,7 @@ eggTab:AddToggle({
 })
 
 eggTab:AddToggle({
-  Name = "buy egg 19!",
+  Name = "600B wins!",
   Default = false,
   Callback = function(bool)
     getgenv().egg19 = bool
@@ -797,7 +825,7 @@ eggTab:AddToggle({
 })
 
 eggTab:AddToggle({
-  Name = "buy egg 20!",
+  Name = "3T wins!",
   Default = false,
   Callback = function(bool)
     getgenv().egg20 = bool
@@ -807,8 +835,14 @@ eggTab:AddToggle({
   end    
 })
 
+local Section = eggTab:AddSection({
+  Name = "alien eggs"
+})
+
+
+
 eggTab:AddToggle({
-  Name = "buy egg 21!",
+  Name = "30T eggs!",
   Default = false,
   Callback = function(bool)
     getgenv().egg21 = bool
@@ -819,7 +853,7 @@ eggTab:AddToggle({
 })
 
 eggTab:AddToggle({
-  Name = "buy egg 22!",
+  Name = "500T eggs!",
   Default = false,
   Callback = function(bool)
     getgenv().egg22 = bool
@@ -829,8 +863,14 @@ eggTab:AddToggle({
   end    
 })
 
+local Section = eggTab:AddSection({
+  Name = "candy eggs"
+})
+
+
+
 eggTab:AddToggle({
-  Name = "buy egg 23!",
+  Name = "15Qa wins!",
   Default = false,
   Callback = function(bool)
     getgenv().egg23 = bool
@@ -841,7 +881,7 @@ eggTab:AddToggle({
 })
 
 eggTab:AddToggle({
-  Name = "buy egg 24!",
+  Name = "300Qa wins!",
   Default = false,
   Callback = function(bool)
     getgenv().egg24 = bool
