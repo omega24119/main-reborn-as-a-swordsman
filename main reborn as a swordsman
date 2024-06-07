@@ -905,7 +905,7 @@ infoTab:AddParagraph("Helper", "Bloxfruit.Trader0835 (Goku)")
 infoTab:AddParagraph("Information", "The eggs indicate which 5-win egg (pink) you opened, but it's purely visual. It awards you the corresponding pet of the egg you opened.")
 infoTab:AddParagraph("Join Our Discord", "For more updates and scripts, join our Discord community by visiting the channel below:")
 infoTab:AddButton({
-  Name = "Copy Discord Link",
+  Name = "Copy youtube Link",
   Callback = function()
       setclipboard("https://www.youtube.com/@takatakgamer8521?si=q94tBpxKXPYuCCFM")
       print("Discord link copied to clipboard")
