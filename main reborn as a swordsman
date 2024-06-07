@@ -186,3 +186,723 @@ mainTab:AddButton({
           print("button pressed")
     end    
 })
+
+--egg tab and egg  stuff
+local eggTab = Window:MakeTab({
+  Name = "Eggs",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+})
+
+--egg values
+getgenv().egg1 = false
+getgenv().egg2 = false
+getgenv().egg3 = false
+getgenv().egg4 = false
+getgenv().egg5 = false
+getgenv().egg6 = false
+getgenv().egg7 = false
+getgenv().egg8 = false
+getgenv().egg9 = false
+getgenv().egg10 = false
+getgenv().egg11 = false
+getgenv().egg12 = false
+getgenv().egg13 = false
+getgenv().egg14 = false
+getgenv().egg15 = false
+getgenv().egg16 = false
+getgenv().egg17 = false
+getgenv().egg18 = false
+getgenv().egg19 = false
+getgenv().egg20 = false
+getgenv().egg21 = false
+getgenv().egg22 = false
+getgenv().egg23 = false
+getgenv().egg24 = false
+
+--egg functions
+function doegg1()
+  while getgenv().egg1 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw001",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+function doegg2()
+  while getgenv().egg2 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw002",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+function doegg3()
+  while getgenv().egg3 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw003",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+function doegg4()
+  while getgenv().egg4 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw004",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+
+function doegg5()
+  while getgenv().egg5 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw005",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+function doegg6()
+  while getgenv().egg6 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw006",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+function doegg7()
+  while getgenv().egg7 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw007",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+function doegg8()
+  while getgenv().egg8 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw008",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+
+
+function doegg9()
+  while getgenv().egg9 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw009",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+function doegg10()
+  while getgenv().egg10 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw010",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+function doegg11()
+  while getgenv().egg11 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw011",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+function doegg12()
+  while getgenv().egg12 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw012",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+function doegg13()
+  while getgenv().egg13 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw013",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+function doegg14()
+  while getgenv().egg14 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw014",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+function doegg15()
+  while getgenv().egg15 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw015",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+function doegg16()
+  while getgenv().egg16 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw016",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+function doegg17()
+  while getgenv().egg17 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw017",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+function doegg18()
+  while getgenv().egg18 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw018",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+function doegg19()
+  while getgenv().egg19 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw019",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+function doegg20()
+  while getgenv().egg20 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw020",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+function doegg21()
+  while getgenv().egg21 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw021",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+function doegg22()
+  while getgenv().egg22 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw022",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+function doegg23()
+  while getgenv().egg23 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw023",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+function doegg24()
+  while getgenv().egg24 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Draw024",
+      [3] = {}
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Pets"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+  end
+
+
+
+
+
+--egg toggles
+eggTab:AddToggle({
+  Name = "buy egg 1!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg1 = bool
+    if bool then
+      doegg1()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 2!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg2 = bool
+    if bool then
+      doegg2()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 3!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg3 = bool
+    if bool then
+      doegg3()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 4!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg4 = bool
+    if bool then
+      doegg4()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 5!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg5 = bool
+    if bool then
+      doegg5()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 6!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg6 = bool
+    if bool then
+      doegg6()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 7!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg7 = bool
+    if bool then
+      doegg7()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 8!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg8 = bool
+    if bool then
+      doegg8()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 9!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg9 = bool
+    if bool then
+      doegg9()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 10!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg10 = bool
+    if bool then
+      doegg10()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 11!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg11 = bool
+    if bool then
+      doegg11()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 12!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg12 = bool
+    if bool then
+      doegg12()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 13!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg13 = bool
+    if bool then
+      doegg13()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 14!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg14 = bool
+    if bool then
+      doegg14()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 15!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg15 = bool
+    if bool then
+      doegg15()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 16!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg16 = bool
+    if bool then
+      doegg16()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 17!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg17 = bool
+    if bool then
+      doegg17()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 18!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg18 = bool
+    if bool then
+      doegg18()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 19!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg19 = bool
+    if bool then
+      doegg19()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 20!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg20 = bool
+    if bool then
+      doegg20()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 21!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg21 = bool
+    if bool then
+      doegg21()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 22!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg22 = bool
+    if bool then
+      doegg22()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 23!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg23 = bool
+    if bool then
+      doegg23()
+    end
+  end    
+})
+
+eggTab:AddToggle({
+  Name = "buy egg 24!",
+  Default = false,
+  Callback = function(bool)
+    getgenv().egg24 = bool
+    if bool then
+      doegg24()
+    end
+  end    
+})
+
+--kill aura for  bosses
+
+
+getgenv().kill = false
+
+function dokill()
+    while getgenv().kill == true do 
+        local ReplicatedStorage = game:GetService("ReplicatedStorage")
+        local Events = ReplicatedStorage.Events.Relics
+
+        -- Function to fire the Re_TakeDamage remote with the provided argument
+        local function damageNPC(damageValue)
+            local args = {
+                [1] = damageValue
+            }
+            Events.Re_TakeDamage:FireServer(unpack(args))
+        end
+
+        -- List of damage values for each NPC
+        local npcDamages = {2, 3, 1}
+
+        -- Toggle to enable/disable damage aura
+        local damageEnabled = false
+
+        -- Function to toggle damage aura
+        local function toggleDamageAura()
+            damageEnabled = not damageEnabled
+            if damageEnabled then
+                for _, damageValue in ipairs(npcDamages) do
+                    damageNPC(damageValue)
+                end
+                print("Damage aura enabled")
+            else
+                print("Damage aura disabled")
+            end
+        end
+
+        -- Example usage:
+        toggleDamageAura() -- Enable damage aura
+        wait(5) -- Wait for 5 seconds (for example)
+        toggleDamageAura() -- Disable damage aura
+        wait(0.1)
+    end
+end
+
+mainTab:AddToggle({
+  Name = "kill aura for bosses!",
+  Default = false,
+  Callback = function(bool)
+      getgenv().kill = bool
+      if bool then
+        dokill()
+    print(Value)
+  end    end
+})
