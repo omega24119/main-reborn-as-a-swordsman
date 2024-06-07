@@ -870,7 +870,7 @@ function dokill()
         end
 
         -- List of damage values for each NPC
-        local npcDamages = {2, 3, 1}
+        local npcDamages = {1, 2, 3, 4}
 
         -- Toggle to enable/disable damage aura
         local damageEnabled = false
