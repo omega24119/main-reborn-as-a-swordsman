@@ -17,7 +17,7 @@ local mainTab = Window:MakeTab({
 })
 
 local othersTab = Window:MakeTab({
-  Name = "extra",
+  Name = "extra & chests",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
@@ -28,7 +28,9 @@ getgenv().selectedTrain = "TrainPower001"
 getgenv().spin = false
 getgenv().rebirth = false
 getgenv().killaura = false
-
+getgenv().chest1 = false
+getgenv().chest2 = false
+getgenv().chest3 = false
 --functions
 function doTrain()
   while getgenv().train == true do
@@ -175,6 +177,38 @@ othersTab:AddToggle({
   end    
 })
 
+othersTab:AddToggle({
+  Name = "open  bronze chest",
+  Default = false,
+  Callback = function(bool)
+    getgenv().chest1 = bool
+    if bool then
+      dochest1()
+    end
+  end    
+})
+
+othersTab:AddToggle({
+  Name = "open  gold chest",
+  Default = false,
+  Callback = function(bool)
+    getgenv().chest2 = bool
+    if bool then
+      dochest2()
+    end
+  end    
+})
+
+othersTab:AddToggle({
+  Name = "open  diamond chest",
+  Default = false,
+  Callback = function(bool)
+    getgenv().chest3 = bool
+    if bool then
+      dochest3()
+    end
+  end    
+})
 --button
 mainTab:AddButton({
   Name = "god mode!",
@@ -911,3 +945,42 @@ infoTab:AddButton({
       print("Discord link copied to clipboard")
   end    
 })
+--chest functions
+function dochest1()
+while getgenv().chest1 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Box001"
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Tower"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+end
+
+function dochest2()
+while getgenv().chest2 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Box002"
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Tower"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+end
+
+function dochest3()
+while getgenv().chest3 == true do
+    local args = {
+      [1] = "Hatch",
+      [2] = "Box003"
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Tower"):WaitForChild("Re_Hatch"):FireServer(unpack(args))
+    wait(0.1)
+  end
+
+end
