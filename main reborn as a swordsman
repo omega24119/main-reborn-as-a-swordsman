@@ -3,7 +3,7 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Window = OrionLib:MakeWindow({Name = "All universe hub", HidePremium = false, IntroEnabled = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local infoTab = Window:MakeTab({
-  Name = "info & credits",
+  Name = "Info & Credits",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
@@ -899,16 +899,15 @@ eggTab:AddToggle({
   end    
 })
 
---information and credit tab stuff
-infoTab:AddParagraph("made by","illumi the greeat  (omega24119)")
-infoTab:Tab:AddParagraph("helper","bloxfruit.trader0835(goku)")
-infoTab:AddParagraph("INFORMATION","the eggs shows u opend the 5 win egg(pink) but that is  just a visual thing it gives u the pet of the egg you opend")
-infoTab:AddParagraph("join our discord","join our discord for more updates and scripts (join by going to the  channel below)!")
+--info and credit tab stuff
+infoTab:AddParagraph("Made By", "Illumi the Great (Omega24119)")
+infoTab:AddParagraph("Helper", "Bloxfruit.Trader0835 (Goku)")
+infoTab:AddParagraph("Information", "The eggs indicate which 5-win egg (pink) you opened, but it's purely visual. It awards you the corresponding pet of the egg you opened.")
+infoTab:AddParagraph("Join Our Discord", "For more updates and scripts, join our Discord community by visiting the channel below:")
 infoTab:AddButton({
-  Name = "Copy youtube link",
+  Name = "Copy Discord Link",
   Callback = function()
       setclipboard("https://www.youtube.com/@takatakgamer8521?si=q94tBpxKXPYuCCFM")
       print("Discord link copied to clipboard")
   end    
 })
-
